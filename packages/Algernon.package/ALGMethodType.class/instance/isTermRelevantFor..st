@@ -1,4 +1,4 @@
 relevance
 isTermRelevantFor: aLowercaseString
 
-	^ self methodContent asLowercase includesSubString: aLowercaseString
+	^ (ALGItem methodCache at: aLowercaseString ifAbsent: [^ false]) includesSubstring: aLowercaseString

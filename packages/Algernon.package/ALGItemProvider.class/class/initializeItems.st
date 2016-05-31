@@ -2,6 +2,7 @@ initialization
 initializeItems
 
 	DefaultItems := OrderedCollection new
+		addAll: ALGMethodType algertemList;
 		addAll: ALGClassType algertemList;
 		addAll: ALGCategoryType algertemList;
 		addAll: ALGGlobalVariableType algertemList;
