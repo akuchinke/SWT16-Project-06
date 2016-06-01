@@ -1,4 +1,4 @@
 caching
 contentFromMethod: aMethod
 
-	^ aMethod getSource 
+	^ aMethod getSource asString
