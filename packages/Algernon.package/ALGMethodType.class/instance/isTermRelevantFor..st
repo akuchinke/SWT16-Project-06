@@ -1,4 +1,4 @@
 relevance
 isTermRelevantFor: aLowercaseString
 
-	^ (ALGItem methodCache at: aLowercaseString asSymbol ifAbsent: [^ false]) includes: self typeObject
+	^ (ALGItem methodCache find: aLowercaseString ifAbsent: [^ false]) methodSet includes: self typeObject
